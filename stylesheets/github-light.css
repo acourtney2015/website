@@ -5,7 +5,7 @@ Copyright (c) 2016 GitHub, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
+inthe Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
@@ -22,103 +22,60 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
-
-.pl-c /* comment */ {
-  color: #969896;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
 }
 
-.pl-c1 /* constant, variable.other.constant, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */,
-.pl-s .pl-v /* string variable */ {
-  color: #0086b3;
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.pl-e /* entity */,
-.pl-en /* entity.name */ {
-  color: #795da3;
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('img_parallax1.jpg');
+    min-height: 100%;
 }
 
-.pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
-.pl-s .pl-s1 /* string source */ {
-  color: #333;
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("img_parallax2.jpg");
+    min-height: 400px;
 }
 
-.pl-ent /* entity.name.tag */ {
-  color: #63a35c;
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("img_parallax3.jpg");
+    min-height: 400px;
 }
 
-.pl-k /* keyword, storage, storage.type */ {
-  color: #a71d5d;
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
 }
 
-.pl-s /* string */,
-.pl-pds /* punctuation.definition.string, string.regexp.character-class */,
-.pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
-.pl-sr /* string.regexp */,
-.pl-sr .pl-cce /* string.regexp constant.character.escape */,
-.pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
-.pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
-  color: #183691;
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
-
-.pl-v /* variable */ {
-  color: #ed6a43;
-}
-
-.pl-id /* invalid.deprecated */ {
-  color: #b52a1d;
-}
-
-.pl-ii /* invalid.illegal */ {
-  color: #f8f8f8;
-  background-color: #b52a1d;
-}
-
-.pl-sr .pl-cce /* string.regexp constant.character.escape */ {
-  font-weight: bold;
-  color: #63a35c;
-}
-
-.pl-ml /* markup.list */ {
-  color: #693a17;
-}
-
-.pl-mh /* markup.heading */,
-.pl-mh .pl-en /* markup.heading entity.name */,
-.pl-ms /* meta.separator */ {
-  font-weight: bold;
-  color: #1d3e81;
-}
-
-.pl-mq /* markup.quote */ {
-  color: #008080;
-}
-
-.pl-mi /* markup.italic */ {
-  font-style: italic;
-  color: #333;
-}
-
-.pl-mb /* markup.bold */ {
-  font-weight: bold;
-  color: #333;
-}
-
-.pl-md /* markup.deleted, meta.diff.header.from-file */ {
-  color: #bd2c00;
-  background-color: #ffecec;
-}
-
-.pl-mi1 /* markup.inserted, meta.diff.header.to-file */ {
-  color: #55a532;
-  background-color: #eaffea;
-}
-
-.pl-mdr /* meta.diff.range */ {
-  font-weight: bold;
-  color: #795da3;
-}
-
-.pl-mo /* meta.output */ {
-  color: #1d3e81;
-}
+</style>
 
